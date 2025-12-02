@@ -1,7 +1,0 @@
-name: ci_simo
-on: [push]
-jobs:
-  mio_job:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "hello world"
