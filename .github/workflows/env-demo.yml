@@ -1,8 +1,7 @@
 name: test_env
 on: 
   push:
-     branches:
-       - develop
+     branches: [ "develop" ]
 
 env:
   APP_ENV : "testtest"
