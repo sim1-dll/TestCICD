@@ -4,8 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "exit 0"
+    "test": "echo \"Testing...\" && exit 0",
+    "build": "mkdir dist && touch dist/app.js"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sim1-dll/TestCICD.git"
+  },
+  "author": "simone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sim1-dll/TestCICD/issues"
+  },
+  "homepage": "https://github.com/sim1-dll/TestCICD#readme"
 }
