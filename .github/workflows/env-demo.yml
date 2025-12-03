@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     environment: test
     steps:
-      - run: echo "${{ env.APP_ENV }}"
+      - run: echo $APP_ENV
