@@ -1,0 +1,8 @@
+name: test_env
+on: push
+jobs:
+  env_job:
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+      - run: echo ${{ env.APP_ENV }}
