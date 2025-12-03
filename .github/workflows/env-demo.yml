@@ -1,5 +1,9 @@
 name: test_env
 on: push
+
+env:
+  APP_ENV : "testtest"
+  
 jobs:
   env_job:
     runs-on: ubuntu-latest
