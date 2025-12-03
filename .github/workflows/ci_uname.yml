@@ -1,0 +1,12 @@
+name: ci_uname
+on: push
+
+jobs:
+  uname_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saluto
+        run: echo "Hello World by Simo"
+
+      - name: Info sistema
+        run: uname -a
