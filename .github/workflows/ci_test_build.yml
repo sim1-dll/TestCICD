@@ -1,0 +1,13 @@
+name: ci test & build
+on:
+  push:
+    branches: ["node"]
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+      - run: npm install
+      - run: npm test
+      - run: npm run build
