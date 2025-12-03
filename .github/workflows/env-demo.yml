@@ -1,5 +1,8 @@
 name: test_env
-on: push
+on: 
+  push:
+     branches:
+       - develop
 
 env:
   APP_ENV : "testtest"
@@ -7,6 +10,5 @@ env:
 jobs:
   env_job:
     runs-on: ubuntu-latest
-    environment: test
     steps:
       - run: echo "$APP_ENV"
